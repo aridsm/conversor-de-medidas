@@ -179,7 +179,9 @@ input::placeholder {
 }
 
 .para {
-    padding: 10px
+    padding: 10px;
+    color: #58BEC5;
+    font-size: 14px;
 } 
 
 @media all and (max-width: 1050px) {
