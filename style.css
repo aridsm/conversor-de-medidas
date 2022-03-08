@@ -15,7 +15,9 @@ body {
 .container {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     max-width: 1000px;
+    width:100%;
     margin: auto;
     padding: 50px 15px
 }
@@ -84,7 +86,7 @@ ul {
 
 .unidade ul {
     overflow-y: scroll;
-    height: 200px;
+    max-height: 180px;
 }
 
 li {
@@ -105,10 +107,6 @@ li:hover {
 .unidade {
     position: relative;
     flex:1
-}
-
-.trocar {
-    padding: 10px 20px
 }
 
 .unidade button {
@@ -153,11 +151,10 @@ input:focus {
 }
 
 input::placeholder {
-    font-size: 14px;
     color:#8f8f8f
 }
 
-.converter {
+.trocar {
     background: #EFE480;
     border-radius: 5px;
     color: #9A9513;
@@ -169,13 +166,21 @@ input::placeholder {
     transition: all 0.2s ease;
 }
 
-.converter:hover {
+.trocar img {
+    margin-left: 10px;
+}
+
+.trocar:hover {
     background: #ece176
 }
 
 .resultado {
     color: #7E7E7E;
 }
+
+.para {
+    padding: 10px
+} 
 
 @media all and (max-width: 1050px) {
     h1 {
@@ -205,15 +210,7 @@ input::placeholder {
     .unidade button {
         width: 100%;
     }
-
-    .trocar {
-        padding: 20px 30px
-    }    
-
-    .trocar img{
-       transform: rotate(90deg);
-       margin: 0 auto
-    }
+   
 }
 
 @media all and (max-width: 500px) {

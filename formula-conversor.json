@@ -1,7 +1,6 @@
 {
     "Nanômetro" : 
         {
-        "Nanômetro":"0",
         "Micrômetro":"0.001",
         "Milímetro":"1e-6",
         "Centímetro":"1e-7",
@@ -16,7 +15,6 @@
     "Micrômetro" : 
         {
         "Nanômetro":"1000",
-        "Micrômetro":"0",
         "Milímetro":"0.001",
         "Centímetro":"1e-4",
         "Metro":"1e-6",
@@ -31,7 +29,6 @@
         {
         "Nanômetro":"1e+6",
         "Micrômetro":"1000",
-        "Milímetro":"0",
         "Centímetro":"0.1",
         "Metro":"0.001",
         "Quilômetro":"1e-6",
@@ -46,7 +43,6 @@
         "Nanômetro":"1e+7",
         "Micrômetro":"10000",
         "Milímetro":"10",
-        "Centímetro":"0",
         "Metro":"0.01",
         "Quilômetro":"1e-5",
         "Milha":"6.2137e-6",
@@ -61,7 +57,6 @@
         "Micrômetro":"1e+6",
         "Milímetro":"1000",
         "Centímetro":"100",
-        "Metro":"0",
         "Quilômetro":"0.001",
         "Milha":"0.000621371",
         "Pé":"3.28084",
@@ -76,7 +71,6 @@
         "Milímetro":"1000000",
         "Centímetro":"100000",
         "Metro":"1000",
-        "Quilômetro":"0",
         "Milha":"0.621371",
         "Pé":"3280.84",
         "Polegada":"39370.1",
@@ -91,7 +85,6 @@
         "Centímetro":"160934",
         "Metro":"1609.34",
         "Quilômetro":"1.60934",
-        "Milha":"0",
         "Pé":"5280",
         "Polegada":"63360",
         "Jarda":"1760"
@@ -106,7 +99,6 @@
         "Metro":"0.3048",
         "Quilômetro":"0.0003048",
         "Milha":"0.000189394",
-        "Pé":"0",
         "Polegada":"12",
         "Jarda":"0.333333"
     }
@@ -121,7 +113,6 @@
         "Quilômetro":"2.54e-5",
         "Milha":"1.5783e-5",
         "Pé":"0.0833333",
-        "Polegada":"0",
         "Jarda":"0.0277778"
     }
      ,
@@ -134,13 +125,11 @@
         "Quilômetro":"0.0009144",
         "Milha":"0.000568182",
         "Pé":"3",
-        "Polegada":"36",
-        "Jarda":"0"
+        "Polegada":"36"
     }
      ,
     "Micrograma" :  
         {
-        "Micrograma":"0",
         "Miligrama":"0.001",
         "Grama":"1e-6",
         "Quilograma":"1e-9",
@@ -152,7 +141,6 @@
     "Miligrama" :  
        { 
         "Micrograma":"1000",
-        "Miligrama":"0",
         "Grama":"1e-3",
         "Quilograma":"1e-6",
         "Tonelada":"1e-9",
@@ -164,7 +152,6 @@
         {
         "Micrograma":"1e+6",
         "Miligrama":"1000",
-        "Grama":"0",
         "Quilograma":"0.001",
         "Tonelada":"1e-6",
         "Libra":"0.00220462",
@@ -176,7 +163,6 @@
         "Micrograma":"1e+9",
         "Miligrama":"1e+6",
         "Grama":"1000",
-        "Quilograma":"0",
         "Tonelada":"0.001",
         "Libra":"2.20462",
         "Onça":"35.274"
@@ -188,7 +174,6 @@
         "Miligrama":"1e+9",
         "Grama":"1e+6",
         "Quilograma":"1000",
-        "Tonelada":"0",
         "Libra":"2204.62",
         "Onça":"35274"}
      ,
@@ -199,7 +184,6 @@
         "Grama":"453.592",
         "Quilograma":"0.453592",
         "Tonelada":"0.000453592",
-        "Libra":"0",
         "Onça":"16"
         }
      ,
@@ -210,8 +194,7 @@
         "Grama":"28.3495",
         "Quilograma":"0.0283495",
         "Tonelada":"2.835e-5",
-        "Libra":"0.0625",
-        "Onça":"0"
+        "Libra":"0.0625"
         },
     "Celsius" : {
         "Fahrenheit" : "(input * 9/5) + 32",
