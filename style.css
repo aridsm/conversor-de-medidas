@@ -1,222 +1,231 @@
 * {
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #84C9CD;
-    font-family: 'Open Sans', sans-serif;
-    height: 100vh;
-    display: grid;
-    font-size: 18px;
+  background-color: #f0f0eb;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  display: grid;
+  font-size: 16px;
 }
 
 .container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 1000px;
-    width:100%;
-    margin: auto;
-    padding: 50px 15px
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  padding: 50px 15px;
 }
 
 button {
-    color:inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    font-family: inherit;
-    cursor: pointer;
-    background: transparent;
-    border:0;
-    display: flex;
-    align-items: center;
-    padding: 5px 0
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
 }
 
 label {
-    visibility: hidden;
-    position: absolute;
+  visibility: hidden;
+  position: absolute;
 }
 
 h1 {
-    color: white;
-    font-size: 72px;
-    text-shadow: 0px 0px 20px #58BEC5;
-    margin: 0;
+  color: #363838;
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
-.titulo p, .titulo a{
-    color: white;
-    text-decoration: none;
-    text-shadow: 0px 0px 20px #58BEC5;
+.titulo p,
+.titulo a {
+  color: #363838;
+  text-decoration: none;
 }
 
 .conversor-container {
-    background: #F8FAFA;
-    box-shadow: 0px 4px 40px #58BEC5;
-    border-radius: 10px;
-    padding: 40px;
-    margin-left: 30px;
+  background: #f8fafa;
+  border: 1px solid #e0dfda;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin-left: 30px;
 }
 
 .medidas {
-    color: #313131;
-    position: relative;
+  color: #363838;
+  position: relative;
 }
 
 .medidas button {
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .medidas button:hover {
-    color:#58BEC5
+  color: #9a70c4;
 }
 
 ul {
-    background: #F8FAFA;
-    border:1px solid #bfdee2;
-    position: absolute;
-    bottom: 100%;
-    color: #313131;
-    display: none;
-    width: 100%;
+  background: #f8fafa;
+  border: 1px solid #e0dfda;
+  position: absolute;
+  bottom: 100%;
+  color: #313131;
+  display: none;
+  width: 100%;
 }
 
 .unidade ul {
-    overflow-y: scroll;
-    max-height: 180px;
+  overflow-y: scroll;
+  max-height: 180px;
 }
 
 li {
-    cursor: pointer;
-    padding:10px;
-    list-style: none;
-    transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 10px;
+  list-style: none;
+  transition: all 0.2s ease;
 }
 
 li:hover {
-    background: #CFE8EC
+  background: #f0f0eb;
 }
 
 .unidades-container {
-    display: flex
+  display: flex;
 }
 
 .unidade {
-    position: relative;
-    flex:1
+  position: relative;
+  flex: 1;
 }
 
 .unidade button {
-    background: #CFE8EC;
-    border-radius: 5px;
-    color: #29749D;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-    display: block;
-    transition: all 0.2s ease;
+  border: 1px solid #dae0e0;
+  border-radius: 5px;
+  color: #313131;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  display: block;
+  transition: all 0.2s ease;
 }
 
 .unidade button:hover {
-    background: #bfdee2;
+  border: 1px solid rgba(154, 112, 196, 0.5);
+  color: #9a70c4;
 }
 
 li.ativo {
-    background: #e5edf1;
+  background: #f0f0eb;
 }
 
 input {
-    background: #e5edf1;
-    border-radius: 5px;
-    border: 0;
-    outline: 0;
-    padding: 10px;
-    width: 100%;
-    color:inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    font-family: inherit;
-    margin: 20px 0
+  background: #f0f0eb;
+  border: 1px solid #dae0e0;
+  border-radius: 5px;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  margin: 20px 0;
 }
 
-input:hover {
-    outline: 1px solid #CFE8EC;
-}
-
+input:hover,
 input:focus {
-    outline: 2px solid #84C9CD;
+  border: 1px solid rgba(154, 112, 196, 0.5);
 }
 
 input::placeholder {
-    color:#8f8f8f
+  color: #8f8f8f;
 }
 
 .trocar {
-    background: #EFE480;
-    border-radius: 5px;
-    color: #9A9513;
-    width: 100%;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    margin: 20px 0;
-    transition: all 0.2s ease;
+  background: linear-gradient(180deg, #9a70c4 0%, #543784 100%);
+  color: #f0f0eb;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  transition: all 0.2s ease;
 }
 
 .trocar img {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .trocar:hover {
-    background: #ece176
+  outline: 3px solid rgba(154, 112, 196, 0.5);
 }
 
 .resultado {
-    color: #7E7E7E;
+  color: #7e7e7e;
 }
 
 .para {
-    padding: 10px;
-    color: #58BEC5;
-    font-size: 14px;
-} 
+  padding: 0 10px;
+}
+
+.para img {
+  transform: rotate(-90deg);
+  width: 20px;
+  margin-top: 15px;
+}
 
 @media all and (max-width: 1050px) {
-    h1 {
-        font-size: 48px;
-    }
+  h1 {
+    font-size: 48px;
+  }
 }
 
 @media all and (max-width: 800px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        width: 100%;
-    }
-    .conversor-container {
-        margin-top: 50px;
-        margin-left: 0;
-        width: 450px;
-        padding: 30px;
-    }
-    ul {
-        text-align: left;
-    }
-    .unidades-container {
-        flex-direction: column;
-    }
-    .unidade button {
-        width: 100%;
-    }
-   
+  .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .conversor-container {
+    margin-top: 50px;
+    margin-left: 0;
+    width: 450px;
+    padding: 30px;
+  }
+  ul {
+    text-align: left;
+  }
+  .unidades-container {
+    flex-direction: column;
+  }
+  .unidade button {
+    width: 100%;
+  }
+  .para {
+    padding: 5px;
+  }
+  .para img {
+    transform: rotate(0deg);
+    margin-top: 4px;
+  }
 }
 
 @media all and (max-width: 500px) {
-    .conversor-container {
-        width: 100%;
-    }
+  .conversor-container {
+    width: 100%;
+  }
 }

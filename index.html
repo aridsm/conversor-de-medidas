@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conversor de medidas">
+    <meta name="author" content="Ariane Morelato">
     <title>Conversor de medidas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
     <div class="titulo">
         <h1>Conversor de <br> medidas</h1>
-        <p>By <a href="">Ariane Morelato</a></p>
+        <p>By <a href="https://github.com/aridsm">Ariane Morelato</a></p>
     </div>
 
     <div class="conversor-container">
         <div>
             <div class="medidas">
-                <button aria-expanded="false" aria-controls="lista-medidas" class="js-btns" id="btn-medida">Comprimento</button>
+                <button aria-expanded="false" aria-controls="lista-medidas" class="js-btns" id="btn-medida">Comprimento <img src="./arrow-down-short.svg" alt=""></button>
                 <ul id="lista-medidas">
                     <li role="button" tabindex="0" aria-checked="false">Temperatura</li>
                     <li role="button" tabindex="0" aria-checked="false">Massa</li>
@@ -48,7 +50,7 @@
                     </ul>
                 </div>
 
-               <p class="para">Para</p> 
+               <p class="para"><img src="./arrow-down-short.svg" alt=""></p> 
 
                 <div class="unidade">
                     <button aria-label="Escolher unidade de medida de destino" aria-expanded="false" aria-controls="lista-unidades-destino" class="js-btns" id="btn-to">Metro</button>

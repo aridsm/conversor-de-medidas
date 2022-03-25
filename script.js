@@ -16,7 +16,6 @@ const btnConvert = document.querySelector('.trocar');
 const result = document.querySelector('.resultado')
 const input = document.querySelector('input')
 
-
 function openList(btn) {
     closeUls()
 
@@ -77,8 +76,8 @@ function changeMeasure(listItem) {
     const thisLi = listItem.currentTarget
     const theseLis = thisLi.parentElement.querySelectorAll('li')
     const btn = thisLi.parentElement.previousElementSibling;
-    btn.innerText = thisLi.innerText;
-  
+    btn.innerHTML = thisLi.innerText + '<img src="./arrow-down-short.svg" alt="">';
+
     theseLis.forEach((li) => {
         li.classList.remove('ativo');
         li.setAttribute('aria-checked','false')
