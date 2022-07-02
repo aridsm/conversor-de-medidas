@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,72 +13,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-    <div class="titulo">
-        <h1>Conversor de <br> medidas</h1>
-        <p>By <a href="https://github.com/aridsm">Ariane Morelato</a></p>
-    </div>
+        <div class="titulo">
+            <h1>Conversor de <br> medidas</h1>
+            <p>By <a href="https://github.com/aridsm">Ariane Morelato</a></p>
+        </div>
 
-    <div class="conversor-container">
-        <div>
-            <div class="medidas">
-                <button aria-expanded="false" aria-controls="lista-medidas" class="js-btns" id="btn-medida">Comprimento <img src="./arrow-down-short.svg" alt=""></button>
-                <ul id="lista-medidas">
-                    <li role="button" tabindex="0" aria-checked="false">Temperatura</li>
-                    <li role="button" tabindex="0" aria-checked="false">Massa</li>
-                    <li role="button" tabindex="0" class="ativo" aria-checked="true">Comprimento</li>
-                </ul>
-            </div>
-
-            <label for="valor">Valor</label>
-            <input type="number" name="valor" id="valor" placeholder="Digite um valor!">
-
-            <div class="unidades-container">
-                <div class="unidade">
-                    <button aria-label="Escolher unidade de medida de origem" aria-expanded="false" aria-controls="lista-unidades-origem" class="js-btns" id="btn-from">Centímetro</button>
-                    <ul id="lista-unidades-origem">
-                        <li role="button" tabindex="0" aria-checked="false">Quilômetro</li>                        
-                        <li role="button" tabindex="0" aria-checked="false">Metro</li>
-                        <li role="button" tabindex="0" aria-checked="true" class="ativo">Centímetro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Milímetro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Micrômetro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Nanômetro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Milha</li>
-                        <li role="button" tabindex="0" aria-checked="false">Pé</li>
-                        <li role="button" tabindex="0" aria-checked="false">Polegada</li>
-                        <li role="button" tabindex="0" aria-checked="false">Jarda</li>
+        <div class="conversor-container">
+            <div>
+                <div class="medidas">
+                    <button aria-expanded="false" aria-controls="lista-medidas" class="js-btns" id="btn-medida" data-type="medidas">Comprimento <img src="./arrow-down-short.svg" alt=""></button>
+                    <ul id="lista-medidas">
+                        <li role="button" tabindex="0" aria-checked="false">Temperatura</li>
+                        <li role="button" tabindex="0" aria-checked="false">Massa</li>
+                        <li role="button" tabindex="0" class="ativo" aria-checked="true">Comprimento</li>
                     </ul>
                 </div>
 
-               <p class="para"><img src="./arrow-down-short.svg" alt=""></p> 
+                <label for="valor">Valor</label>
+                <input type="number" name="valor" id="valor" placeholder="Digite um valor!">
 
-                <div class="unidade">
-                    <button aria-label="Escolher unidade de medida de destino" aria-expanded="false" aria-controls="lista-unidades-destino" class="js-btns" id="btn-to">Metro</button>
-                    <ul id="lista-unidades-destino">
-                        <li role="button" tabindex="0" aria-checked="false">Quilômetro</li>                        
-                        <li role="button" tabindex="0" aria-checked="true" class="ativo">Metro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Centímetro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Milímetro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Micrômetro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Nanômetro</li>
-                        <li role="button" tabindex="0" aria-checked="false">Milha</li>
-                        <li role="button" tabindex="0" aria-checked="false">Pé</li>
-                        <li role="button" tabindex="0" aria-checked="false">Polegada</li>
-                        <li role="button" tabindex="0" aria-checked="false">Jarda</li>
-                    </ul>
+                <div class="unidades-container">
+                    <div class="unidade">
+                        <button aria-label="Escolher unidade de medida de origem" aria-expanded="false" aria-controls="lista-unidades-origem" class="js-btns" id="btn-from" data-type="unidades">Centímetro</button>
+                        <ul id="lista-unidades-origem">
+                            <li role="button" tabindex="0" aria-checked="false">Quilômetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Metro</li>
+                            <li role="button" tabindex="0" aria-checked="true" class="ativo">Centímetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Milímetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Micrômetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Nanômetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Milha</li>
+                            <li role="button" tabindex="0" aria-checked="false">Pé</li>
+                            <li role="button" tabindex="0" aria-checked="false">Polegada</li>
+                            <li role="button" tabindex="0" aria-checked="false">Jarda</li>
+                        </ul>
+                    </div>
+
+                    <p class="para"><img src="./arrow-down-short.svg" alt=""></p>
+
+                    <div class="unidade">
+                        <button aria-label="Escolher unidade de medida de destino" aria-expanded="false" aria-controls="lista-unidades-destino" class="js-btns" id="btn-to" data-type="unidades">Metro</button>
+                        <ul id="lista-unidades-destino">
+                            <li role="button" tabindex="0" aria-checked="false">Quilômetro</li>
+                            <li role="button" tabindex="0" aria-checked="true" class="ativo">Metro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Centímetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Milímetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Micrômetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Nanômetro</li>
+                            <li role="button" tabindex="0" aria-checked="false">Milha</li>
+                            <li role="button" tabindex="0" aria-checked="false">Pé</li>
+                            <li role="button" tabindex="0" aria-checked="false">Polegada</li>
+                            <li role="button" tabindex="0" aria-checked="false">Jarda</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
 
-            <button class="trocar" aria-label="Trocar ordem das unidades de medidas">Trocar unidades <img src="arrow-left-right.svg" alt=""></button>
 
-            <div class="resultado" aria-label="resultado" tabindex="0">
-                Por favor, digite um valor
+                <button class="trocar" aria-label="Trocar ordem das unidades de medidas">Trocar unidades <img src="arrow-left-right.svg" alt=""></button>
+
+                <div class="resultado" aria-label="resultado" tabindex="0">
+                    Por favor, digite um valor
+                </div>
             </div>
         </div>
     </div>
-    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

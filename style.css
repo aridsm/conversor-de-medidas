@@ -10,6 +10,9 @@ body {
   height: 100vh;
   display: grid;
   font-size: 16px;
+  background-image: url('./bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
 .container {
@@ -20,6 +23,10 @@ body {
   width: 100%;
   margin: auto;
   padding: 50px 15px;
+  background-image: url('./detalhe.svg');
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  background-position: 2% 85%;
 }
 
 button {
@@ -69,10 +76,15 @@ h1 {
 
 .medidas button {
   transition: all 0.2s ease;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #dae0e0;
 }
 
 .medidas button:hover {
+  border: 1px solid rgba(154, 112, 196, 0.5);
   color: #9a70c4;
+  background: rgba(154, 112, 196, 0.05);
 }
 
 ul {
@@ -124,6 +136,7 @@ li:hover {
 .unidade button:hover {
   border: 1px solid rgba(154, 112, 196, 0.5);
   color: #9a70c4;
+  background: rgba(154, 112, 196, 0.05);
 }
 
 li.ativo {
@@ -131,7 +144,7 @@ li.ativo {
 }
 
 input {
-  background: #f0f0eb;
+  background: rgba(154, 112, 196, 0.05);
   border: 1px solid #dae0e0;
   border-radius: 5px;
   outline: 0;
@@ -175,6 +188,7 @@ input::placeholder {
 
 .resultado {
   color: #7e7e7e;
+  font-size: 1.2rem;
 }
 
 .para {
@@ -200,24 +214,30 @@ input::placeholder {
     align-items: center;
     width: 100%;
   }
+
   .conversor-container {
     margin-top: 50px;
     margin-left: 0;
     width: 450px;
     padding: 30px;
   }
+
   ul {
     text-align: left;
   }
+
   .unidades-container {
     flex-direction: column;
   }
+
   .unidade button {
     width: 100%;
   }
+
   .para {
     padding: 5px;
   }
+
   .para img {
     transform: rotate(0deg);
     margin-top: 4px;
@@ -225,7 +245,23 @@ input::placeholder {
 }
 
 @media all and (max-width: 500px) {
+
+  .medidas button,
   .conversor-container {
     width: 100%;
+  }
+}
+
+@media all and (min-width: 1700px) {
+  body {
+    font-size: 22px;
+  }
+
+  .unidade button {
+    width: 200px;
+  }
+
+  .container {
+    max-width: 1000px;
   }
 }

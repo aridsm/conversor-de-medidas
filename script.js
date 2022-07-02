@@ -22,13 +22,13 @@ function openList(btn) {
     const ul = btn.currentTarget.nextElementSibling;
     ul.style.display = 'block';
 
-    btn.currentTarget.setAttribute('aria-expanded','true')
+    btn.currentTarget.setAttribute('aria-expanded', 'true')
 }
 
 function closeUls() {
     AllBtns.forEach((btn) => {
         btn.nextElementSibling.style.display = 'none';
-        btn.setAttribute('aria-expanded','false')  
+        btn.setAttribute('aria-expanded', 'false')
     })
 }
 
@@ -48,7 +48,7 @@ function changeMeasureContent(measure, unit1, unit2) {
             newLi.innerText = unit;
 
             for (let attr of Object.entries(attributesToSet)) {
-               newLi.setAttribute(attr[0], attr[1])
+                newLi.setAttribute(attr[0], attr[1])
             }
 
             ul.appendChild(newLi);
@@ -71,20 +71,30 @@ function checkMeasureContent(measureName) {
     }
 }
 
+function removeCheckedLis(list) {
+    list.forEach((li) => {
+        li.classList.remove('ativo');
+        li.setAttribute('aria-checked', 'false')
+    })
+}
+
+function addCheckedLi(li) {
+    li.classList.add('ativo')
+    li.setAttribute('aria-checked', 'true')
+}
+
 function changeMeasure(listItem) {
 
     const thisLi = listItem.currentTarget
     const theseLis = thisLi.parentElement.querySelectorAll('li')
     const btn = thisLi.parentElement.previousElementSibling;
-    btn.innerHTML = thisLi.innerText + '<img src="./arrow-down-short.svg" alt="">';
+    btn.innerHTML = thisLi.innerText
+    if (btn.dataset.type === 'medidas') {
+        btn.innerHTML += '<img src="./arrow-down-short.svg" alt="">';
+    }
 
-    theseLis.forEach((li) => {
-        li.classList.remove('ativo');
-        li.setAttribute('aria-checked','false')
-    })
-
-    thisLi.classList.add('ativo')
-    thisLi.setAttribute('aria-checked','true')
+    removeCheckedLis(theseLis)
+    addCheckedLi(thisLi)
 
     if (divMedidas.contains(thisLi)) {
         checkMeasureContent(btn.innerText);
@@ -102,18 +112,17 @@ async function convertMeasure() {
     const conversorData = await fetch('./formula-conversor.json');
     const conversorJson = await conversorData.json();
 
-   
     if (fromValue == toValue) {
         result.innerText = v
-    } else if (v == ''){
+    } else if (v == '') {
         result.innerText = 'Por favor, digite um valor'
     } else {
         const conversorConst = conversorJson[fromValue][toValue];
-        if (measureUsed !== 'Temperatura'){
-            result.innerText = conversorConst * v;  
+        if (measureUsed !== 'Temperatura') {
+            result.innerText = conversorConst * v;
         } else {
             result.innerHTML = eval(conversorConst.replace('input', v))
-        }      
+        }
     }
 
 }
