@@ -27,4 +27,4 @@ Ao digitar um valor no input, o valor é convertido ao mesmo tempo de uma unidad
 
 https://aridsm.github.io/conversor-de-medidas/
 
-![página inicial](https://github.com/aridsm/conversor-de-medidas/blob/main/page.png)
+![gif página inicial](https://github.com/aridsm/conversor-de-medidas/blob/main/page_conversor.gif)
