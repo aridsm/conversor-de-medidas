@@ -1,3 +1,5 @@
+import conversorFormulas from "./formula_conversoes.js";
+
 const comprimento = ['Nanômetro', 'Micrômetro', 'Milímetro', 'Centímetro', 'Metro', 'Quilômetro', 'Milha', 'Pé', 'Polegada', 'Jarda'];
 const temperatura = ['Kelvin', 'Fahrenheit', 'Celsius'];
 const massa = ['Micrograma', 'Miligrama', 'Grama', 'Quilograma', 'Tonelada', 'Libra', 'Onça'];
@@ -109,15 +111,13 @@ async function convertMeasure() {
     const fromValue = document.querySelector('#btn-from').innerText;
     const toValue = document.querySelector('#btn-to').innerText;
 
-    const conversorData = await fetch('./formula-conversor.json');
-    const conversorJson = await conversorData.json();
 
     if (fromValue == toValue) {
         result.innerText = v
     } else if (v == '') {
         result.innerText = 'Por favor, digite um valor'
     } else {
-        const conversorConst = conversorJson[fromValue][toValue];
+        const conversorConst = conversorFormulas[fromValue][toValue];
         if (measureUsed !== 'Temperatura') {
             result.innerText = conversorConst * v;
         } else {
